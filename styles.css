@@ -1,0 +1,234 @@
+* {
+  transition: background-color 0.6s ease, color 0.05s ease;
+}
+
+html{
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  scroll-behavior: smooth;
+  --color: black;
+  --color-highlight: grey;
+  ---shadow: #b664b0;
+  overflow-x: hidden;
+}
+
+#navbar{
+  overflow:hidden;
+  position:sticky;
+}
+
+#aboutme{
+
+}
+
+.me{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1000px;
+    background-color: lightblue;
+}
+
+.work{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+grad{
+  background: linear-gradient(135deg, #6699FF 0%, #FF3366 100%);
+  color: #B664B0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.title{
+  background: linear-gradient(90deg, hsla(0, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 20%);
+  color: #B664B0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.title2{
+  background: linear-gradient(90deg, hsla(160, 100%, 40%, 1) 0%, hsla(82, 100%, 50%, 1) 100%);
+  color: #B664B0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.hero{
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -80px;;
+  width: 100vw;
+  height: 65vh;
+}
+
+.dmode{
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+/* ------------ ☀️ / 🌒 Switch Toggle ------------ */
+.toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 25px;
+    font-size: 150%;
+}
+
+.toggle:before {
+    content: '🌞';
+}
+
+.toggle.active:before {
+    content: '🌙';
+}
+
+.toggle.animate {
+    animation: animate .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: 0.05s ease;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+  --color: white;
+}
+
+nav{
+  display:inline;
+  justify-content: center;
+  margin-top: -10px;
+  background-color: var(--nav);
+}
+
+a{
+  list-style-type: none;
+  color: var(--color);
+  text-decoration: none;
+  transition: color 0.2s ease,color 0.2s ease;
+}
+
+a:hover{
+  list-style-type: none;
+  color: var(--color-highlight);
+  text-decoration: none;
+  transition: color 0.2s ease-out,color 0.2s ease-out;
+  transition: background 0.2s ease-out,background 0.2s ease-out;
+}
+
+p{
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-left: 40px;
+}
+
+ul{
+  list-style-type: none;
+  padding-bottom: 125px;
+}
+
+li{
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button{
+  color: #ffffff;
+    box-shadow: 0 10px 20px -10px var(---shadow);
+    background: linear-gradient(135deg, #6699FF 0%, #FF3366 100%);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color:var(--color);
+    transition: background 0.2s ease,background 0.2s ease,box-shadow 0.2s ease;
+}
+
+.button:hover{
+      background: linear-gradient(90deg, hsla(220, 60%, 58%, 1) 0%, hsla(345, 72%, 52%, 1) 100%);
+      color: var(--color);
+      transition: background 0.2s ease,background 0.2s ease,box-shadow 0.2s ease;
+}
+
+.breaker{
+  border-left: 6px solid var(--color);
+  height:150px;
+  position:absolute;
+  margin-left: 0px;
+
+}
+
+article{
+  margin-bottom: 100px;
+}
+
+.ches{
+  max-width: 3px;
+  min-height: 150px;
+  position: absolute;
+  background: linear-gradient(180deg, hsla(0, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+  padding: 3px;
+  margin-left: 0px;
+}
+
+
+.clean{
+  max-width: 3px;
+  min-height: 150px;
+  position: absolute;
+  background: linear-gradient(180deg, hsla(160, 100%, 40%, 1) 0%, hsla(82, 100%, 50%, 1) 100%);
+  padding: 3px;
+  margin-left: 0px;
+}
+
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+.icon{
+  transition: fill .2s ease-in-out;
+  height:35px;
+  width: 35px;
+  display: block;
+  position: absolute;
+  padding-left: 40px;
+}
+
+.icon:hover{
+  transition: fill .2s ease-in-out;
+  height:35px;
+  width: 35px;
+  display: block;
+  position: absolute;
+  padding-left: 40px;
+  color: lightblue;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
