@@ -12,6 +12,7 @@ html{
   --color-highlight: grey;
   ---shadow: #b664b0;
   overflow-x: hidden;
+  width: 100%;
 }
 
 #navbar{
@@ -72,6 +73,10 @@ grad{
   margin-top: -80px;;
   width: 100%;
   height: 65vh;
+  clear:both;
+  min-width: 220px;
+  margin: auto;
+
 }
 
 .dmode{
