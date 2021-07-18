@@ -103,7 +103,7 @@ grad{
   margin: auto;
   font-size: 55px;
   margin-bottom: 100px;
-  max-device-width: 1000px;
+  max-width: 1000px;
 
 }
 
@@ -212,7 +212,7 @@ article{
 }
 
 .ches{
-  max-device-width: 3px;
+  max-width: 3px;
   min-height: 150px;
   position: absolute;
   background: linear-gradient(180deg, hsla(0, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
@@ -222,7 +222,7 @@ article{
 
 
 .clean{
-  max-device-width: 3px;
+  max-width: 3px;
   min-height: 150px;
   position: absolute;
   background: linear-gradient(180deg, hsla(160, 100%, 40%, 1) 0%, hsla(82, 100%, 50%, 1) 100%);
