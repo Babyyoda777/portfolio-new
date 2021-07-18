@@ -71,6 +71,9 @@ grad{
   -webkit-box-decoration-break: clone;
 }
 
+
+
+
 .title{
   background: linear-gradient(90deg, hsla(0, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 20%);
   color: #B664B0;
@@ -100,7 +103,7 @@ grad{
   margin: auto;
   font-size: 55px;
   margin-bottom: 100px;
-  max-width: 1000px;
+  max-device-width: 1000px;
 
 }
 
@@ -187,6 +190,7 @@ li{
     font-size: 30px;
     color:var(--color);
     transition: background 0.2s ease,background 0.2s ease,box-shadow 0.2s ease;
+
 }
 
 .button:hover{
@@ -208,7 +212,7 @@ article{
 }
 
 .ches{
-  max-width: 3px;
+  max-device-width: 3px;
   min-height: 150px;
   position: absolute;
   background: linear-gradient(180deg, hsla(0, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
@@ -218,7 +222,7 @@ article{
 
 
 .clean{
-  max-width: 3px;
+  max-device-width: 3px;
   min-height: 150px;
   position: absolute;
   background: linear-gradient(180deg, hsla(160, 100%, 40%, 1) 0%, hsla(82, 100%, 50%, 1) 100%);
