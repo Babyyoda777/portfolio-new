@@ -38,6 +38,29 @@ html{
     margin-right: auto;
 }
 
+#typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .05em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation:
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 1000px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--color); }
+}
+
 
 grad{
   background: linear-gradient(135deg, #6699FF 0%, #FF3366 100%);
@@ -77,6 +100,7 @@ grad{
   margin: auto;
   font-size: 55px;
   margin-bottom: 100px;
+  max-width: 1000px;
 
 }
 
@@ -156,9 +180,11 @@ li{
   color: #ffffff;
     box-shadow: 0 10px 20px -10px var(---shadow);
     background: linear-gradient(135deg, #6699FF 0%, #FF3366 100%);
-    padding: 10px;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 30px;
     color:var(--color);
     transition: background 0.2s ease,background 0.2s ease,box-shadow 0.2s ease;
 }
@@ -246,7 +272,7 @@ article{
   display: block;
   position: relative;
   z-index: 1;
-  margin-bottom: -200px;
+  margin-bottom: -100px;
   -webkit-user-select: none;
   user-select: none;
   padding-left: 10px;
@@ -259,6 +285,7 @@ article{
   color: var(--color);
 
   transition: color 0.3s ease;
+  padding-left: 40px;
 }
 
 #menuToggle a:hover
@@ -354,7 +381,7 @@ article{
 #menu
 {
   position: relative;
-  width: 300px;
+  width: 700px;
   margin-left: -10px;
   padding-top:0px;
 
@@ -372,7 +399,7 @@ article{
 #menu li
 {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 37px;
 }
 
 /*
